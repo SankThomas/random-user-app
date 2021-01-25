@@ -100,11 +100,18 @@ const FetchUsers = () => {
                       <span className="font-bold">Longitude:</span> {longitude}
                     </li>
                     <li>
-                      {offset}, {description}
+                      <span className="font-bold">Timezone:</span> {offset},{' '}
+                      {description}
                     </li>
                   </ul>
                 </div>
               </div>
+              <button
+                onClick={() => fetchUserData()}
+                className="block mx-auto mt-5 bg-gray-900 text-white py-1 px-4 rounded-lg transition-colors hover:bg-gray-600"
+              >
+                Next Person
+              </button>
             </div>
           )
         })}
